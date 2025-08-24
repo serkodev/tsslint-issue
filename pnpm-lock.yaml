@@ -28,14 +28,14 @@ importers:
         specifier: ^3.19.2
         version: 3.19.2(magicast@0.3.5)(typescript@5.9.2)(vitest@3.2.4(@types/node@24.3.0)(jiti@2.5.1)(terser@5.43.1)(yaml@2.8.1))
       '@tsslint/cli':
-        specifier: ^2.0.4
-        version: 2.0.4(typescript@5.9.2)
+        specifier: ^1.6.1
+        version: 1.6.1(typescript@5.9.2)
       '@tsslint/config':
-        specifier: ^2.0.4
-        version: 2.0.4(typescript@5.9.2)
+        specifier: ^1.6.1
+        version: 1.6.1(typescript@5.9.2)
       '@tsslint/eslint':
-        specifier: ^2.0.4
-        version: 2.0.4(jiti@2.5.1)(typescript@5.9.2)
+        specifier: ^1.6.1
+        version: 1.6.1(jiti@2.5.1)(typescript@5.9.2)
       '@types/node':
         specifier: latest
         version: 24.3.0
@@ -1396,23 +1396,23 @@ packages:
     peerDependencies:
       eslint: '>=9.0.0'
 
-  '@tsslint/cli@2.0.4':
-    resolution: {integrity: sha512-TT+vWaWE5OYFT1kvPwD4UQo4ngX9KIGNed1D4Ji6QoL2+RcTLa18i5Hml4j2pKaaivmNl225MZtsgO3neeyhZQ==}
+  '@tsslint/cli@1.6.1':
+    resolution: {integrity: sha512-2XIOo59XiKRnHBRNWaFU2UUgpILhZOuIjebFuR+nKUSqEf97JNIHLEc9PViLardyX93WSiHLptSL4Nu2FC4sBg==}
     hasBin: true
     peerDependencies:
       typescript: '*'
 
-  '@tsslint/config@2.0.4':
-    resolution: {integrity: sha512-s5SJlEB/Pd7EKNnGirSY2VjcpWwj1HDg8oNUJ37nJnEJ4KqHOybpuIshRckYRctAE1UV5uzRyQWQXNecNX+s3w==}
+  '@tsslint/config@1.6.1':
+    resolution: {integrity: sha512-oeKy3ffs9seBXMP5fv8dGIwVaSPZL6Oq0n5kh6YB3DsLYAg10CTTVCwIlRIxH2bC+Av8JIcJgE47FFGMc+23xA==}
 
-  '@tsslint/core@2.0.4':
-    resolution: {integrity: sha512-1aYlKG3VoV2sobr70Nzt9mlNS76yWhssCmEQ0L41kZnASLVgIoVrwFcYR6U+4gnkugK1Q3ThzjT17eV4TxoNpg==}
+  '@tsslint/core@1.6.1':
+    resolution: {integrity: sha512-NwQel19qk+kfYhx3VT/CqjwohzOf81uPkYWVuQqwHYGww4c5mkWENpDHNUPTcjJKq2mrNpkKvJzO+YKF9hzYvw==}
 
-  '@tsslint/eslint@2.0.4':
-    resolution: {integrity: sha512-9syUwbfnrlxUP7KzMPtNwPTvupSiAk6MJEEfOWXNxGoaz+o4MUMA9cRSGjrseCVKiTg4hPUcwy0mgUNVfNvqcw==}
+  '@tsslint/eslint@1.6.1':
+    resolution: {integrity: sha512-P5bDNCF4z5vJ9kqK6xZPltgj9F7M4uqrdIUIt7LUjzSpuEHGj+l1PfTRVczaQqcaZnTpGo+tG/jTeV+4VnZC1g==}
 
-  '@tsslint/types@2.0.4':
-    resolution: {integrity: sha512-+2CQVAw+pgU+wk+Y+fb65dEobjsv1fdCOxACo9WgVuKEteodQLtAofQfYthhd3UAkUlTKC6RVDUB4UArtgRDVw==}
+  '@tsslint/types@1.6.1':
+    resolution: {integrity: sha512-FW2OUhqz5RGTjgZzBL55BU36gwRq0zcmGT3ip8forEbkRCdM1P+G0KIcYPuhYI5IhoYeQIVkd09F0L7OXBp7pQ==}
 
   '@tybys/wasm-util@0.10.0':
     resolution: {integrity: sha512-VyyPYFlOMNylG45GoAe0xDoLwWuowvf92F9kySqzYh8vmYm7D2u4iUJKa1tOUpS70Ku13ASrOkS4ScXFsTaCNQ==}
@@ -6189,11 +6189,11 @@ snapshots:
       estraverse: 5.3.0
       picomatch: 4.0.3
 
-  '@tsslint/cli@2.0.4(typescript@5.9.2)':
+  '@tsslint/cli@1.6.1(typescript@5.9.2)':
     dependencies:
       '@clack/prompts': 0.8.2
-      '@tsslint/config': 2.0.4(typescript@5.9.2)
-      '@tsslint/core': 2.0.4
+      '@tsslint/config': 1.6.1(typescript@5.9.2)
+      '@tsslint/core': 1.6.1
       '@volar/language-core': 2.4.23
       '@volar/language-hub': 0.0.1
       '@volar/typescript': 2.4.23
@@ -6201,23 +6201,22 @@ snapshots:
       json5: 2.2.3
       typescript: 5.9.2
 
-  '@tsslint/config@2.0.4(typescript@5.9.2)':
+  '@tsslint/config@1.6.1(typescript@5.9.2)':
     dependencies:
-      '@tsslint/types': 2.0.4
-      minimatch: 10.0.3
+      '@tsslint/types': 1.6.1
       ts-api-utils: 2.1.0(typescript@5.9.2)
     transitivePeerDependencies:
       - typescript
 
-  '@tsslint/core@2.0.4':
+  '@tsslint/core@1.6.1':
     dependencies:
-      '@tsslint/types': 2.0.4
+      '@tsslint/types': 1.6.1
       esbuild: 0.25.9
       minimatch: 10.0.3
 
-  '@tsslint/eslint@2.0.4(jiti@2.5.1)(typescript@5.9.2)':
+  '@tsslint/eslint@1.6.1(jiti@2.5.1)(typescript@5.9.2)':
     dependencies:
-      '@tsslint/config': 2.0.4(typescript@5.9.2)
+      '@tsslint/config': 1.6.1(typescript@5.9.2)
       '@typescript-eslint/parser': 8.40.0(eslint@9.27.0(jiti@2.5.1))(typescript@5.9.2)
       eslint: 9.27.0(jiti@2.5.1)
     transitivePeerDependencies:
@@ -6225,7 +6224,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tsslint/types@2.0.4': {}
+  '@tsslint/types@1.6.1': {}
 
   '@tybys/wasm-util@0.10.0':
     dependencies:
