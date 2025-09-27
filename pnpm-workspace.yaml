@@ -1,0 +1,6 @@
+packages:
+  - packages/*
+
+onlyBuiltDependencies:
+  - '@tsslint/core'
+  - '@tsslint/eslint'

@@ -1,57 +1,30 @@
 {
-  "name": "my-module",
-  "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
-  "license": "MIT",
   "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/types.d.mts",
-      "import": "./dist/module.mjs"
-    }
-  },
-  "main": "./dist/module.mjs",
-  "typesVersions": {
-    "*": {
-      ".": [
-        "./dist/types.d.mts"
-      ]
-    }
-  },
-  "files": [
-    "dist"
-  ],
+  "version": "1.0.0",
   "scripts": {
-    "prepack": "nuxt-module-build build",
-    "dev": "npm run dev:prepare && nuxi dev playground",
-    "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
-    "lint": "eslint .",
-    "test": "vitest run",
-    "test:watch": "vitest watch",
-    "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit",
+    "lint:all": "tsslint --vue-project ./packages/*/tsconfig.json",
+    "lint:root": "tsslint --vue-project ./tsconfig.json",
+    "lint:app": "tsslint --vue-project ./packages/app/tsconfig.json",
+    "lint:admin": "tsslint --vue-project ./packages/admin/tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "node node_modules/@tsslint/eslint/scripts/generateDts.js"
   },
-  "dependencies": {
-    "@nuxt/kit": "^4.0.3"
-  },
+  "packageManager": "pnpm@10.17.1",
+  "browserslist": [
+    "defaults",
+    "not dead",
+    "not ie >= 0",
+    "not ie_mob >= 0",
+    "not op_mini all",
+    "not KaiOS >= 0",
+    "iOS >= 13.4",
+    "Safari >= 13.1",
+    "Chrome >= 74"
+  ],
   "devDependencies": {
-    "@nuxt/devtools": "^2.6.2",
-    "@nuxt/eslint-config": "^1.9.0",
-    "@nuxt/module-builder": "^1.0.2",
-    "@nuxt/schema": "^4.0.3",
-    "@nuxt/test-utils": "^3.19.2",
+    "@koddsson/eslint-plugin-tscompat": "^0.2.0",
     "@tsslint/cli": "^2.0.4",
     "@tsslint/config": "^2.0.4",
-    "@tsslint/eslint": "^2.0.4",
-    "@types/node": "latest",
-    "changelogen": "^0.6.2",
-    "eslint": "^9.33.0",
-    "nuxt": "^4.0.3",
-    "typescript": "~5.9.2",
-    "vitest": "^3.2.4",
-    "vue-tsc": "^3.0.5"
+    "@tsslint/eslint": "^2.0.4"
   }
 }
