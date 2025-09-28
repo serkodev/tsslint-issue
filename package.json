@@ -2,7 +2,7 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
-    "lint:all": "tsslint --vue-project ./packages/*/tsconfig.json",
+    "lint:all": "tsslint --vue-project {packages/admin/tsconfig.json,packages/{app,share}/.nuxt/tsconfig.*.json}",
     "lint:root": "tsslint --vue-project ./tsconfig.json",
     "lint:app": "tsslint --vue-project ./packages/app/tsconfig.json",
     "lint:admin": "tsslint --vue-project ./packages/admin/tsconfig.json",
