@@ -2,5 +2,7 @@ packages:
   - packages/*
 
 onlyBuiltDependencies:
+  - '@parcel/watcher'
   - '@tsslint/core'
   - '@tsslint/eslint'
+  - esbuild

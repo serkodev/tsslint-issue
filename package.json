@@ -23,8 +23,8 @@
   ],
   "devDependencies": {
     "@koddsson/eslint-plugin-tscompat": "^0.2.0",
-    "@tsslint/cli": "^2.0.4",
-    "@tsslint/config": "^2.0.4",
-    "@tsslint/eslint": "^2.0.4"
+    "@tsslint/cli": "^2.0.5",
+    "@tsslint/config": "^2.0.5",
+    "@tsslint/eslint": "^2.0.5"
   }
 }
