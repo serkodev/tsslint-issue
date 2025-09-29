@@ -4,7 +4,7 @@
   "scripts": {
     "lint:all": "tsslint --vue-project ./packages/*/tsconfig.json",
     "lint:root": "tsslint --vue-project ./tsconfig.json",
-    "lint:app": "tsslint --vue-project ./packages/app/tsconfig.json",
+    "lint:app": "tsslint --vue-project ./packages/app/.nuxt/tsconfig.*.json",
     "lint:admin": "tsslint --vue-project ./packages/admin/tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "node node_modules/@tsslint/eslint/scripts/generateDts.js"
